@@ -14,6 +14,11 @@ body {
 	font-family: Arial;
 }
 
+h3 {
+    text-align: center;
+}
+
+
 .os-theme-dark>.os-scrollbar-vertical, .os-theme-light>.os-scrollbar-vertical {
     width: 2em;
 }
@@ -118,34 +123,31 @@ h1 {
 
 .Operativeinfo {
     white-space: pre-line;
+	text-align: justify;
 }
 
-.DialogBlock[data-block="Races"] {
-    width: 45em;
-}
-
-.Operativeinfo {
-    text-align: justify;
+.DialogBlock {
+    max-width: 45em;
 }
 
 .Operativeinfo p {
     margin: 0;
 }
 
-h3#RaceH3 {
+#RaceH3 {
     text-align: center;
     font-size: 2em;
     margin: 0;
     margin-bottom: 0.7em;
 }
 
-.Operative_Choose {
+.Operative_Choose, .Country_Choose {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-button.get_race {
+.get_race {
     width: 10%;
     background: #111;
     color: #fff;
@@ -157,4 +159,40 @@ button.get_race {
 
 .get_race.active, .get_race:hover {
     background: #000;
+}
+
+.get_country {
+    border: none;
+    background: none;
+    height: 5em;
+    width: 5em;
+    position: relative;
+    padding: 0;
+    transition: all .3s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.get_country img {
+    height: 100%;
+}
+
+.get_country:hover {
+    background: #111;
+}
+
+.get_country.active {
+    border: 2px solid #fff;
+}
+
+.Countryinfo {
+    white-space: pre-line;
+	text-align: justify;
+}
+
+.CountryinfoWrapper {
+    max-height: 20em;
+    margin-top: 2em;
+    padding-right: 1.4em;
+    margin-right: -1.5em;
 }
