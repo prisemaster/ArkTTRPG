@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Consolate Elf';
+    src: local('Consolate Elf'), local('ConsolateElf'),
+        url('../fonts/ConsolateElf.woff2') format('woff2'),
+        url('../fonts/ConsolateElf.woff') format('woff'),
+        url('../fonts/ConsolateElf.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	background: rgb(54, 54, 54);   
+	font-family: Arial;
+}
+
+.os-theme-dark>.os-scrollbar-vertical, .os-theme-light>.os-scrollbar-vertical {
+    width: 2em;
+}
+
+.os-scrollbar-vertical {
+    width: 0.6em !important;
+    background: #606060 !important;
+    padding: 0 !important;
+}
+
+.os-scrollbar-track.os-scrollbar-track-off {
+    padding: 0 !important;
+}
+
+.os-scrollbar-handle {
+    background: #141414 !important;
+    border-radius: 0 !important;
+}
+
+.os-scrollbar-track.os-scrollbar-track-off {
+    border-radius: 0 !important;
+}
+
+.MainWrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DialogBlock {
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+	transform: translateY(2em);
+	position: absolute;
+	background-color: #2a2a2a;
+	color: #fff;
+	padding: 1.5em 2em;
+	border-radius: 0.5em;
+}
+
+.DialogBlock.active {
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.DialogText--center {
+    text-align: center;
+}
+
+.DialogText {margin-top: 0;margin-bottom: 0.5em;}
+
+.DialogButtons_Block {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    /* border-radius: 0.8em; */
+}
+
+.DialogButton {
+    border: none;
+    color: #fff;
+    background: #111;
+    width: 13em;
+    font-size: 1.1em;
+    padding: 0.9em 0.8em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DialogButton:hover {
+    background: #000;
+}
+
+.InputBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.InputBlock label {
+    margin-right: 1em;
+}
+
+.InputBlock input {
+    background: #111;
+    border: none;
+    color: #fff;
+    font-family: 'Consolate Elf';
+    font-size: 1.1em;
+    padding: 0.5em 0.4em;
+}
+
+.Operativeinfo {
+    white-space: pre-line;
+}
+
+.DialogBlock[data-block="Races"] {
+    width: 45em;
+}
+
+.Operativeinfo {
+    text-align: justify;
+}
+
+.Operativeinfo p {
+    margin: 0;
+}
+
+h3#RaceH3 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 0.7em;
+}
+
+.Operative_Choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button.get_race {
+    width: 10%;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 0.4em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.get_race.active, .get_race:hover {
+    background: #000;
+}

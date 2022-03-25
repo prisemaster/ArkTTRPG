@@ -4,9 +4,70 @@
 <head>
     <meta charset="utf-8" />
     <title>ArkTTRPG</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/OverlayScrollbars.min.css" />
+    
 </head>
-<body>
-    <h1>ARKNIGHTS</h1>
+<body data-simplebar>
+
+	<div class="MainWrapper">
+		<div class="DialogBlock active" data-block="Start">
+			<h1>ARKNIGHTS TTRPG</h1>
+			<p class="DialogText DialogText--center">Добро пожаловать!</p>
+			<p class="DialogText DialogText--center">Вы желаете создать нового персонажа или загрузить уже существующего?</p>
+			<div class="DialogButtons_Block">
+				<button class="DialogButton BtnTo" data-to="Names">Новый персонаж</button>
+				<button class="DialogButton" id="NewCharacter">Загрузить персонажа</button>
+			</div>
+		</div>
+		
+		<div class="DialogBlock" data-block="Names">
+			<div class="InputBlock">
+				<label for="InputName">Имя персонажа</label>
+				<input type="Text" id="InputName"></input>
+			</div>
+			
+			<div class="InputBlock">
+				<label for="InputPlayer">Имя игрока</label>
+				<input type="Text" id="InputPlayer"></input>
+			</div>
+			
+			<div class="InputBlock">
+				<label for="InputStory">История</label>
+				<input type="Text" id="InputStory"></input>
+			</div>
+			
+			<div class="DialogButtons_Block">
+				<button class="DialogButton BtnTo" data-to="Races">Далее</button>
+			</div>
+		</div>
+		
+		<div class="DialogBlock" data-block="Races">
+			<div class="Operative">
+				<div class="Operative_Choose">
+				</div>
+				
+				<div class="OperativeinfoWrapper">
+					<div class="Operativeinfo">
+						<h3 id="RaceH3"></h3>
+						<div id="RaceDesc"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="DialogButtons_Block">
+				<button class="DialogButton BtnTo" data-to="Country">Далее</button>
+			</div>
+		</div>
+	
+	</div>
+    
+
+    <!--scripts-->
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+	<script src="resources/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="resources/js/data.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
 
