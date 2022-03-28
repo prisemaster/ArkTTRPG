@@ -143,7 +143,7 @@ h1 {
     margin-bottom: 0.7em;
 }
 
-.Operative_Choose, .Country_Choose {
+.Operative_Choose, .Country_Choose, .Classes_Choose {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -164,7 +164,7 @@ h1 {
     background: #000;
 }
 
-.get_country {
+.get_country, .get_class {
     border: none;
     background: none;
     height: 5em;
@@ -176,29 +176,25 @@ h1 {
     box-sizing: border-box;
 }
 
-.get_country img {
+.get_country img, .get_class img  {
     height: 100%;
 }
 
-.get_country:hover {
+.get_country:hover, .get_class:hover {
     background: #111;
 }
 
-.get_country.active {
+.get_country.active, .get_class.active {
     border: 1px solid #fff;
 }
 
-.Countryinfo {
+.Countryinfo, .Classesinfo  {
     white-space: pre-line;
 	text-align: justify;
 }
 
-.CountryinfoWrapper {
+.CountryinfoWrapper, .ClassesinfoWrapper  {
     max-height: 20em;
     padding-right: 1.4em;
     margin-right: -1.5em;
-}
-
-.get_race.active {
-    border: 1px solid #fff;
 }
